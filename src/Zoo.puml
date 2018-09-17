@@ -1,0 +1,32 @@
+@startuml
+
+class Zoo{
+
+}
+
+
+Class Animal{
+-name: String
+-age : int
+-gender : char
+-weight: int
+
++eat()
++sleep()
+
+}
+
+
+
+class Bird{
+
++Fly()
+}
+
+class Fish{
+
++Swim()
+}
+
+
+Zoo *-- Animal "0..* "animal " : requires
